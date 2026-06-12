@@ -95,6 +95,7 @@
     const grid = el("div", "skill-grid");
     [
       ["Development", data.skills.dev],
+      ["Tools / Frameworks", data.skills.tools],
       ["Design Tools", data.skills.design]
     ].forEach(([title, items]) => {
       const card = el("article", "skill-card reveal");

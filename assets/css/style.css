@@ -391,6 +391,14 @@ button {
   color: var(--color-muted);
 }
 
+.story-panel p {
+  white-space: pre-line;
+}
+
+.essay-card p {
+  white-space: pre-line;
+}
+
 .metric-grid {
   display: grid;
   gap: 14px;
@@ -714,6 +722,10 @@ button {
   }
 
   .project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .skill-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
