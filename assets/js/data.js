@@ -2,7 +2,7 @@ const portfolioData = {
   profile: {
     name: "정은호 (鄭誾鎬)",
     headline: "숫자의 가치를 아는 개발자",
-    slogan: "돈의 흐름에 대한 높은 이해도와 서울정수폴리텍에서 습득한 프레임워크 기술을 결합하여, 보안 사고 없는 무결점 금융 서비스를 지향합니다.",
+    slogan: "돈의 흐름에 대한 높은 이해도와 서울정수폴리텍에서 습득한 프레임워크 기술을 결합하여, 보안 사고 없는 무결점 IT 서비스를 지향합니다.",
     subSlogan: "영업과 IT가 만나 안정성을 더하다.",
     address: "서울특별시 동작구 상도로13나길 8",
     phone: "+82 010-5744-3003",
@@ -85,17 +85,17 @@ const portfolioData = {
       thumb: "assets/img/proj1.jpg"
     },
     {
-      title: " 대시보드",
-      desc: "웹 대시보드 예시입니다.",
-      tags: ["HTML", "CSS", "JavaScript"],
-      repo: "",
-      demo: "",
-      thumb: "assets/img/proj2.jpg"
+      title: " WeatherFit",
+      desc: "날씨 기반 코디 큐레이션 웹 서비스",
+      tags: ["HTML", "CSS", "JavaScript" ,"API", "GitHub" ],
+      repo: "https://github.com/eunno-kr/WeatherFit.git",
+      demo: "https://eunno-kr.github.io/WeatherFit/figma-design/",
+      thumb: "assets/img/proj2.png"
     },
     {
-      title: "대시보드 2",
-      desc: "웹 대시보드 예시입니다.",
-      tags: ["Vanilla JS", "UX", "Local Data"],
+      title: "OwnerBoard",
+      desc: "사장님들의 SNS 콘텐츠 관리 플랫폼",
+      tags: ["HTML", "CSS", "JavaScript"],
       repo: "",
       demo: "",
       thumb: "assets/img/proj3.jpg"

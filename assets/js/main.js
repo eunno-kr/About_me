@@ -59,7 +59,7 @@
     img.alt = `${profile.name} 프로필 사진`;
     setImageFallback(img, profile.name);
     const badge = el("div", "profile-card__badge");
-    badge.innerHTML = `<strong>Finance IT</strong><span>Career Transition</span>`;
+    badge.innerHTML = `<strong>Tech Career</strong><span>Career Transition</span>`;
     frame.append(img, badge);
     visual.append(frame);
     wrap.append(copy, visual);
@@ -78,7 +78,7 @@
     [
       ["19개점", "아울렛 담당 경험"],
       ["2건", "디자인 등록"],
-      ["금융 IT", "새로운 목표"]
+      ["IT 개발자", "새로운 목표"]
     ].forEach(([value, label]) => {
       const item = el("div", "metric-card");
       item.append(el("strong", "", value), el("span", "", label));
