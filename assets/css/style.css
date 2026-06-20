@@ -830,27 +830,52 @@ button {
   }
 
   .hero-journey__track {
+    position: relative;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0;
   }
 
+  .hero-journey__track::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 18px;
+    right: 16.666%;
+    left: 16.666%;
+    height: 2px;
+    background: var(--color-line);
+  }
+
   .hero-journey__item {
-    grid-template-columns: 38px minmax(0, 1fr);
-    padding-right: 22px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 9px;
+    padding: 0 12px;
+    text-align: center;
   }
 
   .hero-journey__content {
-    padding-right: 8px;
-    background: var(--color-surface);
+    width: 100%;
+    padding: 0;
+    background: transparent;
   }
 
   .hero-journey__item:not(:last-child)::after {
-    top: 18px;
-    right: 0;
-    bottom: auto;
-    left: 38px;
-    width: calc(100% - 38px);
-    height: 2px;
+    display: none;
+  }
+
+  .hero-journey__top {
+    display: grid;
+    justify-content: center;
+    gap: 2px;
+  }
+
+  .hero-journey__top span {
+    justify-self: center;
+  }
+
+  .hero-journey__content p {
+    margin-top: 5px;
   }
 
   .hero__copy {
