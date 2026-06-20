@@ -62,7 +62,32 @@
     badge.innerHTML = `<strong>Tech Career</strong><span>Career Transition</span>`;
     frame.append(img, badge);
     visual.append(frame);
-    wrap.append(copy, visual);
+
+    const journey = el("section", "hero-journey");
+    journey.setAttribute("aria-label", "커리어 전환 과정");
+    const journeyHead = el("div", "hero-journey__head");
+    journeyHead.append(
+      el("p", "hero-journey__eyebrow", "My Journey"),
+      el("p", "hero-journey__summary", "서로 다른 현장 경험을 연결해 더 나은 서비스를 만듭니다.")
+    );
+    const journeyTrack = el("ol", "hero-journey__track");
+    [
+      ["01", "Fashion Design", "디테일과 완성도", "2021–2025"],
+      ["02", "VMD & Sales", "고객과 매출의 흐름", "2024–2026"],
+      ["03", "IT Developer", "경험을 기술로 구현", "NOW"]
+    ].forEach(([step, title, desc, period], index) => {
+      const item = el("li", `hero-journey__item${index === 2 ? " is-current" : ""}`);
+      const marker = el("span", "hero-journey__marker", step);
+      const content = el("div", "hero-journey__content");
+      const top = el("div", "hero-journey__top");
+      top.append(el("strong", "", title), el("span", "", period));
+      content.append(top, el("p", "", desc));
+      item.append(marker, content);
+      journeyTrack.append(item);
+    });
+    journey.append(journeyHead, journeyTrack);
+
+    wrap.append(copy, visual, journey);
     root.append(wrap);
   }
 
