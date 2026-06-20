@@ -72,9 +72,9 @@
     );
     const journeyTrack = el("ol", "hero-journey__track");
     [
-      ["01", "Fashion Design", "디테일과 완성도", "2021–2025"],
-      ["02", "VMD & Sales", "고객과 매출의 흐름", "2024–2026"],
-      ["03", "IT Developer", "경험을 기술로 구현", "NOW"]
+      ["01", "Fashion Design", "디테일을 설계하는 감각", "2021–2025"],
+      ["02", "VMD & Sales", "고객과 시장을 읽는 시선", "2024–2026"],
+      ["03", "IT Developer", "경험을 구현하는 기술", "NOW"]
     ].forEach(([step, title, desc, period], index) => {
       const item = el("li", `hero-journey__item${index === 2 ? " is-current" : ""}`);
       const marker = el("span", "hero-journey__marker", step);
