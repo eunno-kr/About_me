@@ -89,7 +89,7 @@ const portfolioData = {
       desc: "날씨 기반 코디 큐레이션 웹 서비스",
       tags: ["HTML", "CSS", "JavaScript" ,"API", "GitHub" ],
       repo: "https://github.com/eunno-kr/WeatherFit.git",
-      demo: "https://eunno-kr.github.io/WeatherFit/figma-design/",
+      demo: "https://koreafit.vercel.app/",
       thumb: "assets/img/proj2.png"
     },
     {
